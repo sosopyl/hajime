@@ -202,6 +202,9 @@ nav img{
     width: 100%;
     font-family: 'logo';
   }
+.member p{
+    display: none;
+}
   
   .member image {
     display: block;
@@ -251,6 +254,8 @@ nav img{
     display: block;
 }
 .modal-content {
+    display: grid;
+    grid-template-columns: 5fr 5fr 1fr;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
