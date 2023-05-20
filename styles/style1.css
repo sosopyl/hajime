@@ -22,7 +22,10 @@
     font-family: logo;
     src: url(fonts/micra-bold_[allfont.ru].ttf);
   }
-
+@font-face {
+    font-family: main;
+    src: url(fonts/taurus-normal_[allfont.ru].ttf);
+}
 
 *{
     margin: 0px;
@@ -164,10 +167,11 @@ nav img{
     color: white;
     text-align: left;
     font-family: 'Arial';
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
     font-weight: lighter;
     justify-items: center;
+    font-family: 'main';
 }
 .aboutusdiv img{
     width: 60%;
@@ -262,7 +266,7 @@ nav img{
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'main';
     border: 1px solid #c4c4c4;
     width: 80%; /* Could be more or less, depending on screen size */
 }
