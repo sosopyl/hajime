@@ -26,7 +26,10 @@
     font-family: main;
     src: url(fonts/taurus-normal_[allfont.ru].ttf);
 }
-
+@font-face {
+    font-family: ruka;
+    src: url(fonts/annabelle_[allfont.ru].ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -164,12 +167,15 @@ nav img{
     column-gap: 35px;
     row-gap: 5px;
     padding: 15px;
-    color: white;
+
     text-align: left;
     font-family: 'Arial';
     font-size: 18px;
     line-height: 1.5;
-    font-weight: lighter;
+
+}
+p{    color: white;
+        font-weight: lighter;
     justify-items: center;
     font-family: 'main';
 }
@@ -200,7 +206,13 @@ nav img{
     width: 100%;
     text-align: center;
 }
-
+.cat3{
+    color: white;
+    font-family: 'logo';
+    margin: 150px auto 50px auto;
+    width: 100%;
+    text-align: center;
+}
 .member {
     position: relative;
     width: 100%;
@@ -291,6 +303,92 @@ nav img{
     text-decoration: none;
     cursor: pointer;
 }
+
+.albom img{
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.alboms{
+    z-index: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    /* max-width: 1000PX; */
+}
+.owl-carousel .item{
+    max-width: 500px;
+}
+.owl-nav button img{
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.411);
+}
+.owl-nav button{
+    position: absolute;
+    top: 45%;
+    bottom: 50%;
+
+}
+.owl-prev{
+    left: 0px;
+}
+.owl-next{
+    right: 0px;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .albom:hover .image {
+    opacity: 0.3;
+  }
+  
+  .albom:hover .middle {
+
+    background-color: #ffffff67;
+    opacity: 1;
+  }
+  .albom button{
+    background-color: crimson;
+    border: 0px;
+    color: white;
+    font-family: 'logo';
+    height: 40px;
+  }
+  .albom button a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+  .alboms p{
+    font-size: 25px;
+    width: 70%;
+    margin: 30px;
+    font-family: 'ruka';
+  }
+  .at2{
+    position: absolute;
+    right: 10px;
+    text-align: right;
+
+  }
 
 @keyframes zoom {
     from {transform:scale(0)}
