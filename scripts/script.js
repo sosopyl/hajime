@@ -55,3 +55,27 @@ musiccat.addEventListener('click', function(){
     scrolling(cat3)
 })
 
+let videocat = document.querySelector('.videocat')
+let cat4 = document.querySelector('.cat4')
+
+videocat.addEventListener('click', function(){
+    scrolling(cat4)
+})
+
+function showclip(clipname, elem) {
+    let tablinks = document.querySelectorAll('.tablink');
+    for(let linkelem of tablinks){
+        linkelem.style.backgroundColor = ''
+    }
+
+    let tabcontent = document.querySelectorAll('.tabcontent');
+    for(let tabelem of tabcontent){
+        tabelem.style.display = 'none'
+    }
+
+    document.getElementById(clipname).style.display = "block";
+    elem.style.backgroundColor = 'crimson';
+}
+
+
+document.getElementById("defaultOpen").click();

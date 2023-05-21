@@ -24,18 +24,19 @@
   }
 @font-face {
     font-family: main;
-    src: url(fonts/taurus-normal_[allfont.ru].ttf);
+    src: url(fonts/europe_ext_[allfont.ru].ttf);
 }
 @font-face {
     font-family: ruka;
-    src: url(fonts/annabelle_[allfont.ru].ttf);
+    src: url(fonts/ofont.ru_Rozovii\ Chulok.ttf);
 }
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
-    background:black
+    background:rgb(20, 19, 20);
+    background-image: url(fon.jpg);
 }
 img{
     width: 100%;
@@ -161,11 +162,11 @@ nav img{
     margin: auto;
     margin-top: 150px;
     width: auto;
-    max-width: 900px;
+    max-width: 2000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 35px;
-    row-gap: 5px;
+    column-gap: 45px;
+    row-gap: 25px;
     padding: 15px;
 
     text-align: left;
@@ -180,7 +181,7 @@ p{    color: white;
     font-family: 'main';
 }
 .aboutusdiv img{
-    width: 60%;
+    width: 35%;
 }
 .aur{
     justify-self: left;
@@ -207,6 +208,13 @@ p{    color: white;
     text-align: center;
 }
 .cat3{
+    color: white;
+    font-family: 'logo';
+    margin: 150px auto 50px auto;
+    width: 100%;
+    text-align: center;
+}
+.cat4 h1{
     color: white;
     font-family: 'logo';
     margin: 150px auto 50px auto;
@@ -250,6 +258,7 @@ p{    color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
+
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -273,6 +282,7 @@ p{    color: white;
     align-items: center;
     display: grid;
     gap: 15px;
+    color: black;
     grid-template-columns: 5fr 5fr 1fr;
     background-color: #ffffffd5;
     margin: 10% auto; /* 15% from the top and centered */
@@ -282,7 +292,12 @@ p{    color: white;
     border: 1px solid #c4c4c4;
     width: 80%; /* Could be more or less, depending on screen size */
 }
-
+.modal-content p{
+    color: black;
+}
+.modal-content span{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* The Close Button */
 .close {
     align-self: first baseline;
@@ -317,7 +332,10 @@ p{    color: white;
     width: 100%;
     height: auto;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     /* max-width: 1000PX; */
+    /* margin-bottom: 500px; */
 }
 .owl-carousel .item{
     max-width: 500px;
@@ -384,12 +402,55 @@ p{    color: white;
     font-family: 'ruka';
   }
   .at2{
-    position: absolute;
+    /* position: absolute; */
     right: 10px;
     text-align: right;
+    align-self: flex-end;
 
   }
+/* Style the tab buttons */
+.tablink {
+    background-color: #55555500;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    font-family: 'logo';
+}
 
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    /* padding: 50px; */
+    text-align: center;
+}
+.tabcontent a{
+    background-color: black;
+}
+/* .tabcontent img:hover{
+    animation: fade2 0.5s forwards;
+} */
+
+.cat4{
+    margin: auto;
+    /* max-width: 1200px; */
+}
+
+/* Style each tab content individually */
+/* #yamakasi {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;} */
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
@@ -402,6 +463,16 @@ p{    color: white;
     to {
       opacity: 0;
       visibility: hidden;
+    }
+  }
+@keyframes fade2 {
+    from {
+      opacity: 1;
+      visibility: visible;
+    }
+    to {
+      opacity: 0.5;
+      /* visibility: hidden; */
     }
   }
 @keyframes show {
