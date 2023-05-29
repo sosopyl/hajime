@@ -445,6 +445,23 @@ p{    color: white;
     margin: auto;
     /* max-width: 1200px; */
 }
+.cat5 table{
+    color: white;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+th{
+    font-family: 'logo';
+    padding: 15px;
+    font-size: 20px;
+}
+td{
+    font-family: 'main';
+    padding: 10px;
+    text-align: center;
+}
+
 
 /* Style each tab content individually */
 /* #yamakasi {background-color:red;}
